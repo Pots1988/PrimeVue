@@ -1,10 +1,10 @@
-import { globalIgnores } from 'eslint/config'
-import { defineConfigWithVueTs, vueTsConfigs } from '@vue/eslint-config-typescript'
-import pluginVue from 'eslint-plugin-vue'
-import pluginPlaywright from 'eslint-plugin-playwright'
-import pluginVitest from '@vitest/eslint-plugin'
-import pluginOxlint from 'eslint-plugin-oxlint'
-import skipFormatting from 'eslint-config-prettier/flat'
+import { globalIgnores } from 'eslint/config';
+import { defineConfigWithVueTs, vueTsConfigs } from '@vue/eslint-config-typescript';
+import pluginVue from 'eslint-plugin-vue';
+import pluginPlaywright from 'eslint-plugin-playwright';
+import pluginVitest from '@vitest/eslint-plugin';
+import pluginOxlint from 'eslint-plugin-oxlint';
+import skipFormatting from 'eslint-config-prettier/flat';
 
 // To allow more languages other than `ts` in `.vue` files, uncomment the following lines:
 // import { configureVueProject } from '@vue/eslint-config-typescript'
@@ -35,4 +35,17 @@ export default defineConfigWithVueTs(
   ...pluginOxlint.buildFromOxlintConfigFile('.oxlintrc.json'),
 
   skipFormatting,
-)
+
+  {
+    rules: {
+      // Enforce semicolons where they are required
+      'semi': ['error', 'always'],
+      // Disallow semicolons after function declarations
+      'semi-style': ['error', 'last'],
+      // Disallow semicolons after return statements
+      'no-extra-semi': 'error',
+      // Disallow semicolons after function expressions
+      'semi-spacing': ['error', { 'before': false, 'after': true }],
+    },
+  },
+);
