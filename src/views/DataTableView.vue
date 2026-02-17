@@ -1,9 +1,5 @@
 <script setup lang="ts"></script>
 
 <template>
-  <AppHeader />
-
-  <RouterView />
+  <PrimeVueDataTable />
 </template>
-
-<style scoped></style>

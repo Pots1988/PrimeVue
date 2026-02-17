@@ -1,9 +1,5 @@
 <script setup lang="ts">
 const loading = ref(false);
-
-// defineProps<{
-//   msg: string;
-// }>();
 </script>
 
 <template>

@@ -21,6 +21,30 @@ export const routes: AppRouteRecord[] = [
     path: '/speed-dial',
     name: 'speed-dial',
     title: 'Speed Dial',
-    component: () => import('../views/SpeedDial.vue'),
+    component: () => import('../views/SpeedDialView.vue'),
+  },
+  {
+    path: '/split-button',
+    name: 'split-button',
+    title: 'Split Button',
+    component: () => import('../views/SplitButtonView.vue'),
+  },
+  {
+    path: '/data-table',
+    name: 'data-table',
+    title: 'Data Table',
+    component: () => import('../views/DataTableView.vue'),
+  },
+  {
+    path: '/stepper',
+    name: 'stepper',
+    title: 'Stepper',
+    component: () => import('../views/StepperView.vue'),
+  },
+  {
+    path: '/drawer',
+    name: 'drawer',
+    title: 'Drawer',
+    component: () => import('../views/DrawerView.vue'),
   },
 ];

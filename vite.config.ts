@@ -15,11 +15,18 @@ export default defineConfig({
     vue(),
     vueDevTools(),
     AutoImport({
-      imports: ['vue', 'vue-router', 'pinia'],
+      imports: [
+        'vue',
+        'vue-router',
+        'pinia',
+        {
+          'primevue/usetoast': ['useToast'],
+        },
+      ],
       dts: 'src/auto-imports.d.ts',
     }),
     Components({
-      dirs: ['src/components', 'src/layouts', 'src/views'],
+      dirs: ['src/components', 'src/layouts'],
 
       resolvers: [PrimeVueResolver({})],
     }),

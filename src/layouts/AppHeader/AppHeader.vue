@@ -7,20 +7,26 @@ import { routes } from '@/router/routes';
   <header>
     <div class="wrapper">
       <nav class="flex flex-wrap items-center gap-4">
-        <Button
+        <RouterLink
           v-for="route in routes"
           :key="route.name"
-          asChild
-          v-slot="slotProps"
-          severity="info"
+          :to="{ name: route.name }"
+          v-slot="{ href, navigate, isActive }"
         >
-          <RouterLink
-            :to="{ name: route.name }"
-            :class="slotProps.class"
+          <Button
+            asChild
+            v-slot="slotProps"
+            :severity="isActive ? 'success' : 'info'"
           >
-            {{ route.title }}
-          </RouterLink>
-        </Button>
+            <a
+              :href="href"
+              @click="navigate"
+              :class="[slotProps.class]"
+            >
+              {{ route.title }}
+            </a>
+          </Button>
+        </RouterLink>
       </nav>
     </div>
   </header>

@@ -1,9 +1,5 @@
 <script setup lang="ts"></script>
 
 <template>
-  <AppHeader />
-
-  <RouterView />
+  <PrimeVueStepper />
 </template>
-
-<style scoped></style>

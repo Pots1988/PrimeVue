@@ -1,9 +1,5 @@
 <script setup lang="ts"></script>
 
 <template>
-  <AppHeader />
-
-  <RouterView />
+  <PrimeVueSplitButton />
 </template>
-
-<style scoped></style>
