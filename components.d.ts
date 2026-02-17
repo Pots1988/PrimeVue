@@ -11,9 +11,15 @@ export {}
 /* prettier-ignore */
 declare module 'vue' {
   export interface GlobalComponents {
+    AppHeader: typeof import('./src/layouts/AppHeader/AppHeader.vue')['default']
     Button: typeof import('primevue/button')['default']
+    ButtonGroup: typeof import('primevue/buttongroup')['default']
+    ButtonsView: typeof import('./src/views/ButtonsView.vue')['default']
+    HomeView: typeof import('./src/views/HomeView.vue')['default']
     PrimeVueButtons: typeof import('./src/components/PrimeVueButtons.vue')['default']
+    PrimeVueSpeedDial: typeof import('./src/components/PrimeVueSpeedDial.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
+    SpeedDial: typeof import('./src/views/SpeedDial.vue')['default']
   }
 }
