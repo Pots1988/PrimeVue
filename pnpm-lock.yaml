@@ -26,6 +26,9 @@ importers:
       '@primeuix/themes':
         specifier: ^2.0.3
         version: 2.0.3
+      '@primevue/themes':
+        specifier: ^4.5.4
+        version: 4.5.4
       pinia:
         specifier: ^3.0.4
         version: 3.0.4(typescript@5.9.3)(vue@3.6.0-beta.6(typescript@5.9.3))
@@ -867,6 +870,11 @@ packages:
   '@primevue/metadata@4.5.4':
     resolution: {integrity: sha512-jJFD0KYm8bPYgFo0JP3Dc2RkyXzrMI1XHQGsEKTysx9Jx2d1XdxtFji/ZsQeoo/RmwUNof5ciZ72URq37rnK+g==}
     engines: {node: '>=12.11.0'}
+
+  '@primevue/themes@4.5.4':
+    resolution: {integrity: sha512-rUFZxMHLanTZdvZq4zgZPk+KRBZ3s7fE3bBK32OrZBkHQhEJmkJ7Ftd4w4QFlXyz1B7c+k5invZiOOCjwHXg9Q==}
+    engines: {node: '>=12.11.0'}
+    deprecated: 'Deprecated. This package is no longer maintained. Please migrate to @primeuix/themes: https://www.npmjs.com/package/@primeuix/themes'
 
   '@rolldown/binding-android-arm64@1.0.0-rc.4':
     resolution: {integrity: sha512-vRq9f4NzvbdZavhQbjkJBx7rRebDKYR9zHfO/Wg486+I7bSecdUapzCm5cyXoK+LHokTxgSq7A5baAXUZkIz0w==}
@@ -3349,6 +3357,11 @@ snapshots:
       - vue
 
   '@primevue/metadata@4.5.4': {}
+
+  '@primevue/themes@4.5.4':
+    dependencies:
+      '@primeuix/styled': 0.7.4
+      '@primeuix/themes': 2.0.3
 
   '@rolldown/binding-android-arm64@1.0.0-rc.4':
     optional: true

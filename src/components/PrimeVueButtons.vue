@@ -5,9 +5,8 @@
 </script>
 
 <template>
-  <div></div>
+  <div>
+    <Button label="Submit" />
+  </div>
 </template>
 
-<style scoped>
-
-</style>
