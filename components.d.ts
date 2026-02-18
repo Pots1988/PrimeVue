@@ -45,6 +45,9 @@ declare module 'vue' {
     StepPanel: typeof import('primevue/steppanel')['default']
     StepPanels: typeof import('primevue/steppanels')['default']
     Stepper: typeof import('primevue/stepper')['default']
+    Tailwind: typeof import('./src/components/Tailwind.vue')['default']
+    TailwindBase: typeof import('./src/components/TailwindBase.vue')['default']
+    TailwindStates: typeof import('./src/components/TailwindStates.vue')['default']
     Toast: typeof import('primevue/toast')['default']
     Toolbar: typeof import('primevue/toolbar')['default']
   }

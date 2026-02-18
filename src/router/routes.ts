@@ -47,4 +47,10 @@ export const routes: AppRouteRecord[] = [
     title: 'Drawer',
     component: () => import('../views/DrawerView.vue'),
   },
+  {
+    path: '/tailwind',
+    name: 'tailwind',
+    title: 'Tailwind',
+    component: () => import('../views/TailwindView.vue'),
+  },
 ];

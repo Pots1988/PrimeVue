@@ -1,6 +1,5 @@
-@import "tailwindcss";
+@import 'tailwindcss';
 @layer tailwind-base, primevue, tailwind-utilities;
-@layer tailwind-base {
-  @import "tailwindcss/preflight";
+@layer base {
+  @import './base.css';
 }
-@import './base.css';
